@@ -49,6 +49,7 @@ entry {
     placeholder-color:              #FFFFFF;
     expand:                         true;
     horizontal-align:               0;
+//    placeholder:                    "Search...";
     placeholder:                    "Buscar...";
     padding:                        10px;
     border-radius:                  0px 12px 12px 0px;

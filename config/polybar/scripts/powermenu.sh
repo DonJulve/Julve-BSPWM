@@ -5,7 +5,7 @@
 ## Github  : @adi1090x
 ## Twitter : @adi1090x
 
-dir="~/.config/polybar/scripts/rofi"
+dir="~/.config/polybar/shapes/scripts/rofi"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 # Traducir la salida
@@ -79,6 +79,11 @@ case $chosen in
         fi
         ;;
     $lock)
+		# if [[ -f /usr/bin/i3lock-fancy ]]; then
+		# 	i3lock-fancy
+		# elif [[ -f /usr/bin/betterlockscreen ]]; then
+		# 	betterlockscreen -l
+		# fi
     betterlockscreen -l blur
         ;;
     $suspend)
