@@ -37,6 +37,8 @@ chmod +x setup.sh
 
 ![overview3](/assets/overview3.png "overview3")
 
+![overview4](/assets/overview4.png "overview4")
+
 
 ## Keyboard shortcuts
 - <kbd>Windows</kbd> + <kbd>Enter</kbd>: Open a terminal emulator window (kitty).
@@ -100,6 +102,11 @@ This configuration uses the following software:
 - **Terminals**: [kitty](https://sw.kovidgoyal.net/kitty/) and [qterminal](https://github.com/lxqt/qterminal)
 - **Static Wallpaper**: [feh](https://github.com/derf/feh)
 - **Screenshot**: [flameshot](https://flameshot.org/)
+- **Neovim**: [neovim](https://github.com/neovim/neovim)
+
+## Recommendations
+- Please see the .zshrc file to know all comands (~/.zshrc).
+- Please see all the plugins in neovim to know all comands (~/.config/nvim/lua/plugins).
 
 ## Credits
 - This environment has been inspired by the functionalities of [S4vitar's](https://github.com/s4vitar) environment.
