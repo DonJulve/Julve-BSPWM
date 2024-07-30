@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# Author: Juan Rivas (aka @r1vs3c)
+# Author: Javier Julve (@DonJulve)
 
 # Colours
 greenColour="\e[0;32m\033[1m"
