@@ -23,7 +23,7 @@ function ctrl_c(){
 	echo -e "\n\n${redColour}[!] Exiting...\n${endColour}"
 	exit 1
 }
-                                                          
+
 function banner(){
 	echo -e "\n${turquoiseColour}     _       _             ____ ____  ______        ____  __ "
 	sleep 0.05
@@ -45,7 +45,7 @@ else
 	sleep 1
 	echo -e "\n\n${blueColour}[*] Installing necessary packages for the environment...\n${endColour}"
 	sleep 2
-	sudo apt install -y kitty rofi feh xclip ranger i3lock-fancy scrot scrub wmname imagemagick cmatrix htop neofetch neovim python3-pip procps tty-clock fzf lsd bat pamixer flameshot lolcat
+	sudo apt install -y kitty rofi feh xclip ranger i3lock-fancy scrot scrub wmname imagemagick cmatrix htop neofetch neovim python3-pip procps tty-clock fzf lsd bat pamixer flameshot lolcat i3lock-color bc
 	if [ $? != 0 ] && [ $? != 130 ]; then
 		echo -e "\n${redColour}[-] Failed to install some packages!\n${endColour}"
 		exit 1
@@ -53,7 +53,7 @@ else
 		echo -e "\n${greenColour}[+] Done\n${endColour}"
 		sleep 1.5
 	fi
- 
+
 	echo -e "\n${blueColour}[*] Starting installation of necessary dependencies for the environment...\n${endColour}"
 	sleep 0.5
 
@@ -217,7 +217,8 @@ else
 	echo -e "\n${purpleColour}[*] Configuring configuration files...\n${endColour}"
 	sleep 2
 	cp -rv $dir/config/* ~/.config/
-  cp -rv $dir/betterlockscreen /usr/local/bin/betterlockscreen
+	cp -rv $dir/betterlockscreen /usr/local/bin/betterlockscreen
+	betterlockscreen -u ~/Wallpapers/Cyberpunk.jpg
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
 	sleep 1.5
 
