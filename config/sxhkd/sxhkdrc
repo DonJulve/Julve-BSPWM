@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/shapes/scripts/rofi/launcher.rasi
+	rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/scripts/rofi/launcher.rasi
 
 # make sxhkd reload its configuration files:
 super + Escape
