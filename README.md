@@ -12,8 +12,8 @@ sudo apt upgrade -y
 2. Clone the repository and navigate to it.
 
 ```shell
-git clone https://github.com/r1vs3c/auto-bspwm.git
-cd auto-bspwm
+git clone https://github.com/DonJulve/Julve-BSPWM.git
+cd Julve-BSPWM
 ```
 
 3. Grant execution permissions to the script.
@@ -103,4 +103,4 @@ This configuration uses the following software:
 
 ## Credits
 - This environment has been inspired by the functionalities of [S4vitar's](https://github.com/s4vitar) environment.
-- This environment has been inspired by the [r1vs3c's] environment (https://github.com/r1vs3c/auto-bspwm).
+- This environment has been inspired by the [r1vs3c's](https://github.com/r1vs3c) environment (https://github.com/r1vs3c/auto-bspwm).
