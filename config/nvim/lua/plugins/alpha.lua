@@ -47,8 +47,9 @@ return {
 			local pluginCount = vim.fn.len(vim.fn.globpath(vim.fn.stdpath("data") .. "/lazy", "*", 0, 1))
 			local print_version = "v" .. version.major .. "." .. version.minor .. "." .. version.patch
 			local date = os.date("%d.%m.%Y")
-			--local datetime = os.date '%d.%m.%Y %H:%M'
-			return " " .. print_version .. "   " .. pluginCount .. "   " .. date
+			local time = os.date ("%H:%M")
+			local colorscheme = vim.g.colors_name or "default"
+      return " " .. print_version .. "   " .. pluginCount .. "   " .. date .. "   " .. time .. "   " .. colorscheme
 		end
 
 		dashboard.section.footer.val = footer()
