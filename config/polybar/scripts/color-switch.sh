@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SDIR="$HOME/.config/polybar/shapes/scripts"
+SDIR="$HOME/.config/polybar/scripts"
 
 # Launch Rofi
 MENU="$(rofi -no-config -no-lazy-grab -sep "|" -dmenu -i -p '' \

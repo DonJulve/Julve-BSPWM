@@ -5,7 +5,7 @@
 ## Github  : @adi1090x
 ## Twitter : @adi1090x
 
-dir="~/.config/polybar/shapes/scripts/rofi"
+dir="~/.config/polybar/scripts/rofi"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 # Traducir la salida

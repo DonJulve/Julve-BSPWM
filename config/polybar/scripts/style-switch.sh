@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-FILE="$HOME/.config/polybar/shapes/glyphs.ini"
+FILE="$HOME/.config/polybar/glyphs.ini"
 
 # Replace Glyphs
 change_style() {
@@ -13,7 +13,7 @@ change_style() {
 
 # Launch Rofi
 MENU="$(rofi -no-config -no-lazy-grab -sep "|" -dmenu -i -p '' \
--theme $HOME/.config/polybar/shapes/scripts/rofi/styles.rasi \
+-theme $HOME/.config/polybar/scripts/rofi/styles.rasi \
 <<< "♥ Style-1|♥ Style-2|♥ Style-3|♥ Style-4|♥ Style-5|♥ Style-6|♥ Style-7|♥ Style-8|♥ Style-9|♥ Style-10|♥ Style-11|♥ Style-12|")"
             case "$MENU" in
 				## Light Colors
