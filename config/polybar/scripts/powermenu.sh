@@ -25,12 +25,6 @@ uptime=$(echo $uptime | sed -e 's/years/años/g' \
 rofi_command="rofi -no-config -theme $dir/powermenu.rasi"
 
 # Options
-#shutdown=" Shutdown"
-#reboot=" Restart"
-#lock=" Lock"
-#suspend=" Sleep"
-#logout=" Logout"
-
 shutdown=" Apagar"
 reboot=" Reiniciar"
 lock=" Bloquear"
@@ -79,11 +73,6 @@ case $chosen in
         fi
         ;;
     $lock)
-		# if [[ -f /usr/bin/i3lock-fancy ]]; then
-		# 	i3lock-fancy
-		# elif [[ -f /usr/bin/betterlockscreen ]]; then
-		# 	betterlockscreen -l
-		# fi
     betterlockscreen -l blur
         ;;
     $suspend)

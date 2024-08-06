@@ -21,7 +21,7 @@ change_color() {
 	sed -i -e "s/shade8 = #.*/shade8 = $SH8/g" $PFILE
 	
 	# kitty
-	sed -i -e "s/^color4[[:space:]]*#[[:xdigit:]]\{6\}/color4 $SH2/g" $KITTY_FILE
+	sed -i -e "s/^color4[[:space:]]*#[[:xdigit:]]\{6\}/color4 $SH4/g" $KITTY_FILE
 	
 	# rofi
 	cat > $RFILE <<- EOF
@@ -38,6 +38,7 @@ change_color() {
 	}
 	EOF
 	
+	cp ~/.config/polybar/auxiliar/no-rgb/* ~/.config/polybar
 	polybar-msg cmd restart
 }
 
@@ -117,6 +118,12 @@ elif  [[ $1 = "--yellow" ]]; then
 	SH1="#F57F17"	SH2="#F9A825"	SH3="#FBC02D"	SH4="#FDD835"
 	SH5="#FFEB3B"	SH6="#FFEE58"	SH7="#FFF176"	SH8="#FFF59D"
 	change_color
+elif  [[ $1 = "--rgb" ]]; then
+	SH1="#B71C1C"	SH2="#EF6C00"	SH3="#FBC02D"	SH4="#7CB342"
+	SH5="#2196F3"	SH6="#5C6BC0"	SH7="#9575CD"	SH8="#C62828"
+	change_color
+	sed -i -e "s/^color4[[:space:]]*#[[:xdigit:]]\{6\}/color4 $SH8/g" $KITTY_FILE
+	cp ~/.config/polybar/auxiliar/rgb/* ~/.config/polybar
 else
 	cat <<- _EOF_
 	No option specified, Available options:

@@ -8,6 +8,5 @@ name_target=$(cat ~/.config/polybar/scripts/target | awk '{print $2}')
 	elif [ $(cat ~/.config/polybar/scripts/target | wc -w) -eq 1 ]; then
 		echo "%{F#ffffff}什%{F#ffffff} $ip_target "
 	else
-		#echo "%{F#ffffff}什%{u-}%{F#ffffff} No target "
 		echo "%{F#ffffff}什%{u-}%{F#ffffff} Sin objetivo "
 	fi

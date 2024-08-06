@@ -5,9 +5,9 @@ SDIR="$HOME/.config/polybar/scripts"
 # Launch Rofi
 MENU="$(rofi -no-config -no-lazy-grab -sep "|" -dmenu -i -p '' \
 -theme $SDIR/rofi/styles.rasi \
-<<< " Amarillo| Ámbar| Azul| Azul-claro| Azul-gris| Azul-verdoso| Cian| Gris|\
+<<< " Amarillo| Ámbar| Arcoiris| Azul| Azul-claro| Azul-gris| Azul-verdoso| Cian| Gris|\
  Índigo| Lima| Marrón| Morado| Morado-oscuro| Naranja| Naranja-oscuro| Rojo|\
- Rosa| Verde| Verde-claro| Amarillo-Dark| Ámbar-Dark| Azul-Dark| Azul-claro-Dark|\
+ Rosa| Verde| Verde-claro| Amarillo-Dark| Ámbar-Dark| Arcoiris-Dark| Azul-Dark| Azul-claro-Dark|\
  Azul-gris-Dark| Azul-verdoso-Dark| Cian-Dark| Gris-Dark| Índigo-Dark| Lima-Dark|\
  Marrón-Dark| Morado-Dark| Morado-oscuro-Dark| Naranja-Dark| Naranja-oscuro-Dark|\
  Rojo-Dark| Rosa-Dark| Verde-Dark| Verde-claro-Dark|")"
@@ -32,6 +32,7 @@ MENU="$(rofi -no-config -no-lazy-grab -sep "|" -dmenu -i -p '' \
 				*Rojo) "$SDIR"/colors-light.sh --red ;;
 				*Azul-verdoso) "$SDIR"/colors-light.sh --teal ;;
 				*Amarillo) "$SDIR"/colors-light.sh --yellow ;;
+				*Arcoiris) "$SDIR"/colors-light.sh --rgb ;;
 				## Dark Colors
 				*Ámbar-Dark) "$SDIR"/colors-dark.sh --amber ;;
 				*Azul-Dark) "$SDIR"/colors-dark.sh --blue ;;
@@ -51,5 +52,6 @@ MENU="$(rofi -no-config -no-lazy-grab -sep "|" -dmenu -i -p '' \
 				*Morado-Dark) "$SDIR"/colors-dark.sh --purple ;;
 				*Rojo-Dark) "$SDIR"/colors-dark.sh --red ;;
 				*Azul-verdoso-Dark) "$SDIR"/colors-dark.sh --teal ;;
-				*Amarillo-Dark) "$SDIR"/colors-dark.sh --yellow				
+				*Amarillo-Dark) "$SDIR"/colors-dark.sh --yellow ;;
+				*Arcoiris-Dark) "$SDIR"/colors-dark.sh --rgb
             esac
