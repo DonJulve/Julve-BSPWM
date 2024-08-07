@@ -45,6 +45,9 @@ else
 	sleep 1
 	echo -e "\n\n${blueColour}[*] Installing necessary packages for the environment...\n${endColour}"
 	sleep 2
+	sudo sh -c 'echo "deb http://deb.opera.com/opera/ stable non-free" >> /etc/apt/sources.list.d/opera.list'
+	sudo sh -c 'wget -O - http://deb.opera.com/archive.key | apt-key add -'
+	sudo apt-get update
 	sudo apt install -y kitty rofi feh xclip ranger i3lock-fancy scrot scrub wmname imagemagick cmatrix htop neofetch neovim python3-pip procps tty-clock fzf lsd bat pamixer flameshot lolcat i3lock-color bc code opera-stable
 	if [ $? != 0 ] && [ $? != 130 ]; then
 		echo -e "\n${redColour}[-] Failed to install some packages!\n${endColour}"
