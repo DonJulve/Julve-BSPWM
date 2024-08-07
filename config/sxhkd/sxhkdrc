@@ -132,10 +132,17 @@ super + shift + f
 super + shift + b
 	/usr/bin/burpsuite
 
+# Open Opera
+super + shift + o
+	/usr/bin/opera
+
+# Open Visual Studio Code
+super + shift + v
+  /usr/bin/code
+
 # Screen Lock
 ctrl + alt + l
-	/usr/bin/i3lock-fancy	
-
+	/usr/local/bin/betterlockscreen -l blur
 # Increase volume
 ctrl + shift + Up
 	pamixer --increase 5
