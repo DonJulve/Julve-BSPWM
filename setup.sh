@@ -251,9 +251,12 @@ else
 	sudo chmod +x /usr/local/share/zsh/site-functions/_bspc
 	sudo chown root:root /usr/local/share/zsh/site-functions/_bspc
 	sudo mkdir -p /root/.config/polybar/scripts/
+  sudo mkdir -p /root/.config/nvim/
 	sudo touch /root/.config/polybar/scripts/target
 	sudo ln -sfv ~/.config/polybar/scripts/target /root/.config/polybar/scripts/target
-	cd ..
+	sudo ln -sfv ~/.config/neofetch/config.conf /root/.config/neofetch/config.conf
+	sudo ln -sfv ~/.config/nvim /root/.config/nvim
+  cd ..
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
 	sleep 1.5
 

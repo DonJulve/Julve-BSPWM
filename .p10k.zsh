@@ -34,6 +34,7 @@
     # =========================[ Line #1 ]=========================
     os_icon                 # os identifier
     dir                     # current directory
+    context                 # fire
     vcs                     # git status
     # =========================[ Line #2 ]=========================
     newline                 # \n
@@ -85,7 +86,7 @@
     gcloud                  # google cloud cli account and project (https://cloud.google.com/)
     google_app_cred         # google application credentials (https://cloud.google.com/docs/authentication/production)
     toolbox                 # toolbox name (https://github.com/containers/toolbox)
-    context                 # user@hostname
+    # context               # user@hostname
     nordvpn                 # nordvpn connection status, linux only (https://nordvpn.com/)
     ranger                  # ranger shell (https://github.com/ranger/ranger)
     yazi                    # yazi shell (https://github.com/sxyazi/yazi)
@@ -972,7 +973,7 @@
   ##################################[ context: user@hostname ]##################################
   # Context color when running with privileges.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=1
-  typeset -g POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=0
+  typeset -g POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=8
   # Context color in SSH without privileges.
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=3
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_BACKGROUND=0
@@ -981,7 +982,7 @@
   typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=0
 
   # Context format when running with privileges: user@hostname.
-  typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%n@%m'
+  typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE=''
   # Context format when in SSH without privileges: user@hostname.
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_TEMPLATE='%n@%m'
   # Default context format (no privileges, no SSH): user@hostname.
@@ -993,6 +994,7 @@
 
   # Custom icon.
   # typeset -g POWERLEVEL9K_CONTEXT_VISUAL_IDENTIFIER_EXPANSION='⭐'
+  typeset -g POWERLEVEL9K_CONTEXT_ROOT_VISUAL_IDENTIFIER_EXPANSION='󰈸'
   # Custom prefix.
   # typeset -g POWERLEVEL9K_CONTEXT_PREFIX='with '
 
