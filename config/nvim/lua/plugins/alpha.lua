@@ -34,10 +34,10 @@ return {
 			dashboard.button("l", "󰒲 Lazy", ":Lazy<CR>"),
 			dashboard.button("s", " Restore Session", [[<cmd> lua require("persistence").load({ last = true }) <cr>]]),
 			dashboard.button("p", "󰝉 Select Previous Session", [[<cmd> lua require("persistence").select() <cr>]]),
-      dashboard.button("o", " Onedark", ":colorscheme onedark<CR>"),
-      dashboard.button("v", " Vscode", ":colorscheme vscode<CR>"),
-      dashboard.button("c", " Catpuccin-Mocha", ":colorscheme catppuccin-mocha<CR>"),
-      dashboard.button("d", " Default", ":colorscheme default<CR>"),
+      -- dashboard.button("o", " Onedark", ":colorscheme onedark<CR>"),
+      -- dashboard.button("v", " Vscode", ":colorscheme vscode<CR>"),
+      -- dashboard.button("c", " Catpuccin-Mocha", ":colorscheme catppuccin-mocha<CR>"),
+      -- dashboard.button("d", " Default", ":colorscheme default<CR>"),
 			dashboard.button("q", " Quit", ":qa<CR>"),
 		}
 
