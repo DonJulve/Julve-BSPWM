@@ -81,8 +81,20 @@ return {
           colorscheme = 'catppuccin-mocha',
         },
         {
-          name = 'Vscode',
+          name = 'Vscode Dark',
           colorscheme = 'vscode',
+          before = function()
+            require('vscode').setup()
+            require('vscode').load('dark')
+          end,
+        },
+        {
+          name = 'Vscode Light',
+          colorscheme = 'vscode',
+          before = function()
+            require('vscode').setup()
+            require('vscode').load('light')
+          end,
         },
         {
           name = 'Default',

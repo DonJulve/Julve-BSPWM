@@ -9,7 +9,7 @@ return {
       require('vscode').setup {
     	  style = 'dark'
     	  -- style = 'light'
-	    } 
+	    }
     end
   }
 }
