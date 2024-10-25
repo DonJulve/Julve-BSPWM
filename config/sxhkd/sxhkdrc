@@ -134,7 +134,7 @@ super + shift + b
 
 # Open Opera
 super + shift + o
-	/usr/bin/opera
+	/usr/bin/opera --lang=es-ES
 
 # Open Visual Studio Code
 super + shift + v
