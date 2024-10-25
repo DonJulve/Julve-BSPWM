@@ -39,6 +39,13 @@ chmod +x setup.sh
 
 ![overview4](/assets/overview4.png "overview4")
 
+![overview5](/assets/overview5.png "overview5")
+
+### To change the polybar beetwen hack mode and normal mode use:
+
+```shell
+hack
+```
 
 ## Keyboard shortcuts
 - <kbd>Windows</kbd> + <kbd>Enter</kbd>: Open a terminal emulator window (kitty).
