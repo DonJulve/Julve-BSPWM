@@ -156,7 +156,7 @@ lock() {
         ${image:+-i "$image"} \
         --color "$bgcolor" \
         ${screen:+-i "$display_on"} \
-        --ind-pos="x+430:y+h-80" \
+        --ind-pos="x+415:y+h-80" \
         --radius=25 \
         --ring-width=5 \
         --inside-color="$insidecolor" \
