@@ -223,7 +223,7 @@ else
 	echo -e "\n${purpleColour}[*] Configuring configuration files...\n${endColour}"
 	sleep 2
 	cp -rv $dir/config/* ~/.config/
-	cp -rv $dir/betterlockscreen /usr/local/bin/betterlockscreen
+	sudo cp -rv $dir/betterlockscreen /usr/local/bin/betterlockscreen
 	betterlockscreen -u ~/Wallpapers/Cyberpunk.jpg
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
 	sleep 1.5
