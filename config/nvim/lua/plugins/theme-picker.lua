@@ -97,6 +97,10 @@ return {
           end,
         },
         {
+          name = 'Finale',
+          colorscheme = 'finale',
+        },
+        {
           name = 'Default',
           colorscheme = 'default',
         },
