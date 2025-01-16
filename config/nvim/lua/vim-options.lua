@@ -16,3 +16,9 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.wo.number = true
 
+vim.api.nvim_create_user_command(
+  "CompileMarkdown",
+  "!cd %:p:h && pandoc %:t -o %:t:r.pdf --pdf-engine=xelatex",
+  { nargs = 0 }
+)
+
