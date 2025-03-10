@@ -46,7 +46,7 @@ else
 	echo -e "\n\n${blueColour}[*] Installing necessary packages for the environment...\n${endColour}"
 	sleep 2
 	sudo apt-get update
-	sudo sh -c 'echo "deb http://deb.opera.com/opera/ stable non-free" >> /etc/apt/sources.list.d/opera.list'
+	sudo sh -c 'echo "deb http://deb.opera.com/opera-stable/ stable non-free" >> /etc/apt/sources.list.d/opera.list'
 	sudo sh -c 'wget -O - http://deb.opera.com/archive.key | apt-key add -'
 	sudo sh -c 'apt install wget gpg'
 	sudo sh -c 'wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/microsoft.gpg'
