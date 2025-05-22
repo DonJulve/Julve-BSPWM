@@ -150,6 +150,15 @@ else
 	fi
 
 	cd ../../
+	
+	echo -e "\n${purpleColour}[*] Installing networkmanager dmenu...\n${endColour}"
+	sleep 2
+	git clone https://github.com/firecat53/networkmanager-dmenu.git
+	cd networkmanager-dmenu
+	chmod +x networkmanager_dmenu
+	sudo cp networkmanager_dmenu /usr/local/bin/
+	
+	cd ..
 
 	echo -e "\n${purpleColour}[*] Installing picom...\n${endColour}"
 	sleep 2
