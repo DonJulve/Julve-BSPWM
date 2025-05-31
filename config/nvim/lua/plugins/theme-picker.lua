@@ -18,6 +18,9 @@ return {
               style = 'dark'
             }
           end,
+          after = function()
+            require('lualine').setup({ options = { theme = 'onedark' } })
+          end,
         },
         {
           name = 'One Dark (Darker)',
@@ -26,6 +29,9 @@ return {
             vim.g.onedark_config = {
               style = 'darker'
             }
+          end,
+          after = function()
+            require('lualine').setup({ options = { theme = 'onedark' } })
           end,
         },
         {
@@ -36,6 +42,9 @@ return {
               style = 'cool'
             }
           end,
+          after = function()
+            require('lualine').setup({ options = { theme = 'onedark' } })
+          end,
         },
         {
           name = 'One Dark (Deep)',
@@ -44,6 +53,9 @@ return {
             vim.g.onedark_config = {
               style = 'deep'
             }
+          end,
+          after = function()
+            require('lualine').setup({ options = { theme = 'onedark' } })
           end,
         },
         {
@@ -54,6 +66,9 @@ return {
               style = 'warm'
             }
           end,
+          after = function()
+            require('lualine').setup({ options = { theme = 'onedark' } })
+          end,
         },
         {
           name = 'One Dark (Warmer)',
@@ -63,22 +78,37 @@ return {
               style = 'warmer'
             }
           end,
+          after = function()
+            require('lualine').setup({ options = { theme = 'onedark' } })
+          end,
         },
         {
           name = 'Catppuccino Latte',
           colorscheme = 'catppuccin-latte',
+          after = function()
+            require('lualine').setup({ options = { theme = 'catppuccin' } })
+          end,
         },
         {
           name = 'Catppuccino Frappe',
           colorscheme = 'catppuccin-frappe',
+          after = function()
+            require('lualine').setup({ options = { theme = 'catppuccin' } })
+          end,
         },
         {
           name = 'Catppuccino Macchiato',
           colorscheme = 'catppuccin-macchiato',
+          after = function()
+            require('lualine').setup({ options = { theme = 'catppuccin' } })
+          end,
         },
         {
           name = 'Catppuccino Mocha',
           colorscheme = 'catppuccin-mocha',
+          after = function()
+            require('lualine').setup({ options = { theme = 'catppuccin' } })
+          end,
         },
         {
           name = 'Vscode Dark',
@@ -86,6 +116,9 @@ return {
           before = function()
             require('vscode').setup()
             require('vscode').load('dark')
+          end,
+          after = function()
+            require('lualine').setup({ options = { theme = 'vscode' } })
           end,
         },
         {
@@ -95,14 +128,30 @@ return {
             require('vscode').setup()
             require('vscode').load('light')
           end,
+          after = function()
+            require('lualine').setup({ options = { theme = 'vscode' } })
+          end,
         },
         {
           name = 'Finale',
           colorscheme = 'finale',
+          after = function()
+            require('lualine').setup({ options = { theme = 'finale' } })
+          end,
+        },
+        {
+          name = 'NeoCyberVim',
+          colorscheme = 'NeoCyberVim',
+          after = function()
+            require('lualine').setup({ options = { theme = 'NeoCyberVim' } })
+          end,
         },
         {
           name = 'Default',
           colorscheme = 'default',
+          after = function()
+            require('lualine').setup({ options = { theme = 'auto' } })
+          end,
         },
       },
       vim.keymap.set('n', '<leader>tp', ':lua require("theme-picker").open_theme_picker()<CR>', { noremap = true, silent = true })
