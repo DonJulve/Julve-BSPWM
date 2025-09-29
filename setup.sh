@@ -204,7 +204,16 @@ else
 
 	echo -e "\n${blueColour}[*] Starting configuration of fonts, wallpaper, configuration files, .zshrc, .p10k.zsh, and scripts...\n${endColour}"
 	sleep 0.5
+	echo -e "\n${purpleColour}[*] Installing necessary dependencies for animated wallpaper...\n${endColour}"
+	sleep 2
 
+	sudo apt install mpv git build-essential libx11-dev libxrender-dev libxext-dev libxinerama-dev
+	git clone https://github.com/ujjwal96/xwinwrap.git
+	cd xwinwrap
+	make
+	sudo make install
+	cd ..
+	
 	echo -e "\n${purpleColour}[*] Configuring fonts...\n${endColour}"
 	sleep 2
 	if [[ -d "$fdir" ]]; then
@@ -249,6 +258,8 @@ else
 	echo -e "\n${purpleColour}[*] Configuring scripts...\n${endColour}"
 	sleep 2
 	sudo cp -v $dir/scripts/whichSystem.py /usr/local/bin/
+	sudo cp -v $dir/scripts/wallpaper-animado.sh /usr/local/etc
+	sudo cp -v $dir/scripts/conexion_wifi.sh /usr/local/etc
 	cp -rv $dir/scripts/*.sh ~/.config/polybar/scripts/
 	touch ~/.config/polybar/scripts/target
 	echo -e "\n${greenColour}[+] Done\n${endColour}"

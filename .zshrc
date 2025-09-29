@@ -222,6 +222,8 @@ function rmk(){
 	shred -zun 10 -v $1
 }
 
+alias wifi='/usr/local/etc/conexion_wifi.sh'
+alias fuga='/usr/local/etc/wallpaper-animado.sh'
 alias hack='$HOME/.config/polybar/scripts/hack.sh'
 
 export NVM_DIR="$HOME/.nvm"

@@ -47,6 +47,23 @@ chmod +x setup.sh
 hack
 ```
 
+### To easily use wifi follow the instructions after using:
+
+```shell
+wifi
+```
+
+### You can enable or disable an animated wallpaper using:
+
+```shell
+fuga
+```
+
+## Wallpaper can be changed modfiying "~/Wallpapers/wallpaper.mp4"
+
+[Watch the demo video](./assets/video.mp4)
+
+
 ## Keyboard shortcuts
 - <kbd>Windows</kbd> + <kbd>Enter</kbd>: Open a terminal emulator window (kitty).
 - <kbd>Windows</kbd> + <kbd>W</kbd>: Close the current window.
