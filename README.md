@@ -61,7 +61,7 @@ fuga
 
 ## Wallpaper can be changed modfiying "~/Wallpapers/wallpaper.mp4"
 
-[Watch the demo video](./assets/video.mp4)
+![Demo](./assets/video.gif)
 
 
 ## Keyboard shortcuts
