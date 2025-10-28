@@ -83,6 +83,7 @@ fuga
 - <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>: Open Burpsuite.
 - <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd>: Open Opera.
 - <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>: Open Visual Studio Code.
+- <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd>: Open Hack Setup.
 - <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd>: Lock the screen.
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>⬆⬇</kbd>: Increase/decrease volume.
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd>: Mute/unmute volume.

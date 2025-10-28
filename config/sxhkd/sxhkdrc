@@ -161,3 +161,12 @@ ctrl + shift + m
 
 ctrl + @Print
 	flameshot gui
+	
+# Hack mode
+super + shift + h
+    bspc desktop -f ^2 && /usr/bin/kitty & \
+    sleep 1 && bspc desktop -f ^3 && /usr/bin/firefox & \
+    sleep 2 && bspc desktop -f ^4 && /usr/bin/burpsuite & \
+    sleep 3 && bspc desktop -f ^8 && /usr/bin/kitty -e bash -c 'wordlists' & \
+    sleep 4 && bspc desktop -f ^9 && /usr/bin/obsidian & \
+    sleep 5 && bspc desktop -f ^10 && /usr/bin/kitty -d ~/Descargas -e bash -c 'sudo openvpn *.ovpn' &

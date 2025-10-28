@@ -16,9 +16,5 @@ require("vim-options")
 -- Configuración de swap, backups y undo
 vim.opt.swapfile = true
 vim.opt.directory:prepend(vim.fn.stdpath("data") .. "/swap//")
-vim.opt.backup = true
-vim.opt.writebackup = true
-vim.opt.undofile = true
-vim.opt.undodir = vim.fn.stdpath("data") .. "/undo//"
 
 require("lazy").setup("plugins")
