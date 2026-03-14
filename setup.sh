@@ -262,6 +262,7 @@ else
 	sudo cp -v $dir/scripts/whichSystem.py /usr/local/bin/
 	sudo cp -v $dir/scripts/wallpaper-animado.sh /usr/local/etc
 	sudo cp -v $dir/scripts/conexion_wifi.sh /usr/local/etc
+	sudo cp -v $dir/scripts/monitor.sh /usr/local/etc
 	cp -rv $dir/scripts/*.sh ~/.config/polybar/scripts/
 	touch ~/.config/polybar/scripts/target
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
