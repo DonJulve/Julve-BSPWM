@@ -52,8 +52,15 @@ else
 	chmod +x neofetch
 	sudo mv neofetch /usr/local/bin/
 	sudo sh -c 'apt install wget gpg'
-	sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/opera-archive-keyring.gpg] https://deb.opera.com/opera-stable/ stable non-free" | sudo tee /etc/apt/sources.list.d/opera.list'
-	sudo apt install -y kitty rofi feh xclip ranger i3lock-fancy scrot scrub wmname imagemagick cmatrix htop neovim python3-pip procps tty-clock fzf lsd bat pamixer flameshot btop lolcat i3lock-color bc opera-stable
+
+	sudo apt install -y kitty rofi feh xclip ranger i3lock-fancy scrot scrub wmname imagemagick cmatrix htop neovim python3-pip procps tty-clock fzf lsd bat pamixer flameshot btop lolcat i3lock-color bc
+	
+	echo -e "\n${blueColour}[*] Descargando e instalando Opera GX...\n${endColour}"
+	wget -O opera-gx.deb "https://download3.operacdn.com/ftp/pub/opera_gx/128.0.5807.97/linux/opera-gx-stable_128.0.5807.97_amd64.deb"
+	sudo apt install -y ./opera-gx.deb
+	rm opera-gx.deb
+	
+	
 	if [ $? != 0 ] && [ $? != 130 ]; then
 		echo -e "\n${redColour}[-] Failed to install some packages!\n${endColour}"
 		exit 1
