@@ -63,6 +63,11 @@ fuga
 
 ![Demo](./assets/video.gif)
 
+## Polybar Launcher
+The Polybar includes a custom module launcher with the following mouse interactions:
+- Left Click: Opens the application launcher (Rofi).
+- Middle Click: Opens the Network Manager (networkmanager_dmenu) to manage connections.
+- Right Click: Opens the color switcher script to easily change your Polybar theme.
 
 ## Keyboard shortcuts
 - <kbd>Windows</kbd> + <kbd>Enter</kbd>: Open a terminal emulator window (kitty).
@@ -125,11 +130,11 @@ This configuration uses the following software:
 - **File Manager**: [thunar](https://docs.xfce.org/xfce/thunar/start)
 - **Fonts**: [iosevka](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka) and [hack](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)
 - **Application Launcher**: [rofi](https://github.com/davatorium/rofi)
-- **Browsers**: [firefox](https://www.mozilla.org/en-US/firefox/new/)
+- **Browsers**: [firefox](https://www.mozilla.org/en-US/firefox/new/) and [opera gx](https://www.opera.com/gx)
 - **Terminals**: [kitty](https://sw.kovidgoyal.net/kitty/) and [qterminal](https://github.com/lxqt/qterminal)
 - **Static Wallpaper**: [feh](https://github.com/derf/feh)
 - **Screenshot**: [flameshot](https://flameshot.org/)
-- **Neovim**: [neovim](https://github.com/neovim/neovim)
+- **Code Editor**: [neovim](https://github.com/neovim/neovim) and [vscode](https://code.visualstudio.com)
 
 ## Recommendations
 - Please see the .zshrc file to know all comands (~/.zshrc).
