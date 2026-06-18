@@ -3,7 +3,7 @@
 @import "colors.rasi"
 
 * {
-    background-color:       @bg;
+    background-color:       #0a0a12cc;
     text-color:             @fg;
 	font:				 	"Iosevka Nerd Font 10";
 }

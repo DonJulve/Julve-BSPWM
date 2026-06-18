@@ -23,7 +23,7 @@ configuration {
 
 window {
     transparency:                   "real";
-    background-color:               @bg;
+    background-color:               #0a0a12cc;
     text-color:                     @fg;
 	border:							0px;
 	border-color:					@ac;
